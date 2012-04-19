@@ -21,16 +21,7 @@
 	border-width:2px;
 	border-style:solid;
 }
-#list_m{
-	
-	width:900px;
-	height:500px;
-	background-color:#EEE9E9;
-	border-width:2px;
-	border-style:solid;
-	
-	
-	}
+
 #osnova {
 	width:500px;
 	height:115px;
@@ -58,7 +49,7 @@
 	border-width:2px;
 	border-style:solid;
 }
-#rest,#y_bron, #bron, #zakaz{
+#rest,#y_bron, #bron, #zakaz,#list{
 	width:400px;
 	height:510px;
 	float:left;
@@ -67,7 +58,7 @@
 	border-style:solid;
 	
 }
-#galereya,#y_zakaz , #map, #action{
+#galereya,#y_zakaz , #map, #action, #list_img{
 	width:500px;
 	height:510px;
 	margin-left:400px;
