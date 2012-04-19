@@ -1,4 +1,4 @@
-#con, #con_g, #con_y, #con_b, #con_z{
+#con, #con_g, #con_y, #con_b, #con_z, #con_m{
     padding-top:50px;
 	margin:0 auto;
 	height:650px;
@@ -13,7 +13,7 @@
 	border-width:2px;
 	border-style:solid;
 }
-#logo_g ,#logo_y, #logo_b, #logo_z{
+#logo_g ,#logo_y, #logo_b, #logo_z, #logo_m{
 	
 	width:900px;
 	height:115px;
@@ -21,6 +21,16 @@
 	border-width:2px;
 	border-style:solid;
 }
+#list{
+	
+	width:900px;
+	height:500px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+	
+	
+	}
 #osnova {
 	width:500px;
 	height:115px;
