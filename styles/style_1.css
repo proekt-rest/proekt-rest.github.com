@@ -7,9 +7,9 @@
 
 
 
-#osnova {
+#osnova, #osnova_g, #osnova_y, #osnova_m, #osnova_b {
 	width:900px;
-	height:115px;
+	height:100px;
 	margin-left:400px;
 	background-color:#EEE9E9;
 	border-width:2px;
