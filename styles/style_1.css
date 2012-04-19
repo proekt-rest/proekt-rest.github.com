@@ -4,23 +4,8 @@
 	height:650px;
 	width:900px;
 	}
-#logo{
-	
-	width:400px;
-	height:115px;
-	float:left;
-	background-color:#EEE9E9;
-	border-width:2px;
-	border-style:solid;
-}
-#logo_g ,#logo_y, #logo_b, #logo_z, #logo_m{
-	
-	width:900px;
-	height:115px;
-	background-color:#EEE9E9;
-	border-width:2px;
-	border-style:solid;
-}
+
+
 
 #osnova {
 	width:900px;
