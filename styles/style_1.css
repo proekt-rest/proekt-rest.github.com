@@ -1,0 +1,97 @@
+#con, #con_g, #con_y, #con_b, #con_z{
+    padding-top:50px;
+	margin:0 auto;
+	height:650px;
+	width:900px;
+	}
+#logo{
+	
+	width:400px;
+	height:115px;
+	float:left;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+}
+#logo_g ,#logo_y, #logo_b, #logo_z{
+	
+	width:900px;
+	height:115px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+}
+#osnova {
+	width:500px;
+	height:115px;
+	margin-left:400px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+	
+}
+#news {
+	width:450px;
+	height:460px;
+	float:left;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+	
+}
+#sale {
+	
+	width:450px;
+	height:460px;
+	margin-left:450px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+}
+#rest,#y_bron, #bron, #zakaz{
+	width:400px;
+	height:510px;
+	float:left;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+	
+}
+#galereya,#y_zakaz , #map, #action{
+	width:500px;
+	height:510px;
+	margin-left:400px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+	
+}
+#table_b{
+margin:0 auto;
+padding-top:100px;
+//border-width:2px;
+//border-style:ridge;
+}
+#table_b td{
+border-width:2px;
+border-style:ridge;
+border-color: #000000;
+}
+#table_b tr:hover{
+background:#D3D3D3;
+cursor:pointer;
+}
+.chosen {
+background: #C0C0C0;
+}
+#but{
+margin-left:30px;
+}
+#form{
+
+
+
+}
+
+
+
