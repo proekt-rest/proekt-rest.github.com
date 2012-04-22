@@ -27,7 +27,7 @@ min-width:800px;
 margin:0px;
 padding:0px;
 float: left;
-font: bold 16px Arial;
+font: bold 18px Arial;
 width:100%;
 border-width: 1px 0;
 background-color:#8B8989;
@@ -37,9 +37,10 @@ background-color:#8B8989;
 .menu li{
 display: inline;
 vertical-align: middle;
-height:20px;
+height:25px;
 border-left:3px solid #8B8989;
-padding:0 4px 0 8px;
+padding:0 8px 0 16px;
+border-radius:0 15px 0 0;
 }
 li:first-child {
 border:none;
