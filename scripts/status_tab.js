@@ -62,7 +62,7 @@ function displayData(response) {
                {
             
                    
-                  if(dd[1]>time_from_h[1])
+                  if((dd[1]>time_from_h[1])||(dd[1]==time_from_h[1]))
                   {alert("Столик занят с: "+time_from+" до "+time_to+". Пожалуйста, выберите другое время!")
 				   
 				   $("#status_div").css('background-color','red');
