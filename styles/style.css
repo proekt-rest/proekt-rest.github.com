@@ -10,8 +10,8 @@ min-width:800px;
 	}
 #header
 {   
-	background-color:#8B8989;
-	height:120px;
+	background-color:#ec984f;
+	height:140px;
     border-radius:10px 10px 0px 0px;
 	}
 	
@@ -19,9 +19,8 @@ min-width:800px;
 	
 	width:400px;
 	height:115px;
-	background-color:#EEE9E9;
-	border-width:2px;
-	border-style:solid;
+	border-radius:10px 0 0 0;
+	background-image:url('images/logo_main.png');
 }
 .menu{
 margin:0px;
@@ -29,32 +28,33 @@ padding:0px;
 float: left;
 font: bold 18px Arial;
 width:100%;
+height:29px; /* дописал */
 border-width: 1px 0;
-background-color:#8B8989;
-
-
+background-color:#ec984f;
 }
+
 .menu li{
 display: inline;
 vertical-align: middle;
-height:25px;
-border-left:3px solid #8B8989;
-padding:0 8px 0 16px;
-border-radius:0 15px 0 0;
-}
-li:first-child {
-border:none;
+height:30px;
+padding:0 8px 9px 16px;
+margin: 0 8px 0 0;
+border-radius:8px 8px 0 0;
 }
 
-
+li:first-child{
+	margin-left:5px;
+}
 
 .current{
-background:#CDC9C9 center center repeat-x;
+background:#ecf0f1 center center repeat-x;
+box-shadow: 5px -3px 2px #cc7f3f;
 }
 .menu li:hover{
 
 cursor:pointer;
-background:#CDC9C9 center center repeat-x;
+background:#ecf0f1 center center repeat-x;
+box-shadow: 3px -2px 2px #cc7f3f;
 }
 
 	
@@ -63,7 +63,7 @@ background:#CDC9C9 center center repeat-x;
 #content {
 
 	   
-      	background-color:#CDC9C9;
+      	background-color:#ecf0f1;
 	
 		height:810px;
 		width:1000px;

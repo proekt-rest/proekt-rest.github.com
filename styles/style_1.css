@@ -21,7 +21,7 @@ border-radius:0 15px 0 0;
 position:relative;
 top:75px;
 }
-.current{
+.current_menu{
 background:#CDC9C9 center center repeat-x;
 }
 .menu_navi li:hover{
@@ -58,6 +58,8 @@ background:#CDC9C9 center center repeat-x;
 #news {
 	width:450px;
 	height:460px;
+	//padding-right: 1px;
+    //overflow-x: hidden;
 	float:left;
 	background-color:#EEE9E9;
 	border-width:2px;
@@ -76,6 +78,8 @@ background:#CDC9C9 center center repeat-x;
 #rest,#y_bron, #bron, #zakaz{
 	width:400px;
 	height:510px;
+	//padding-right: 1px;
+    //overflow-x: hidden;
 	float:left;
 	background-color:#EEE9E9;
 	border-width:2px;

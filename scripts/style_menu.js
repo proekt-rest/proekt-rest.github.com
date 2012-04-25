@@ -1,20 +1,20 @@
 $(document).ready(function(){
 $("#list").load("./sources/sushi.html");
- $("#sushi").addClass("current") ;
+ $("#sushi").addClass("current_menu") ;
 	  $("#sushi").click(function(){
-	   $('li').removeClass("current");
+	   $('li').removeClass("current_menu");
 	   $("#list").load("./sources/sushi.html");
-	   $("#sushi").addClass("current") ;  
+	   $("#sushi").addClass("current_menu") ;  
 	   });
 	   $("#anti").click(function(){
-	   $('li').removeClass("current");
+	   $('li').removeClass("current_menu");
 	   $("#list").load("./sources/anti.html");
-	   $("#anti").addClass("current") ;  
+	   $("#anti").addClass("current_menu") ;  
 	   });
 	   $("#napitki").click(function(){
-	   $('li').removeClass("current");
+	   $('li').removeClass("current_menu");
 	   $("#list").load("./sources/napitki.html");
-	   $("#napitki").addClass("current") ;  
+	   $("#napitki").addClass("current_menu") ;  
 	   });
 	   
 	   });

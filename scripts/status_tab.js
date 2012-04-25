@@ -61,7 +61,7 @@ function displayData(response) {
                if(dd[0]==time_from_h[0]||(dd[0]>time_from_h[0])&&(dd[0]<time_to_h[0])) 
                {
             
-                   
+                  
                   if((dd[1]>time_from_h[1])||(dd[1]==time_from_h[1]))
                   {alert("Столик занят с: "+time_from+" до "+time_to+". Пожалуйста, выберите другое время!")
 				   
