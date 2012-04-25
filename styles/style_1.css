@@ -95,8 +95,8 @@ background:#CDC9C9 center center repeat-x;
 #table_b{
 margin:0 auto;
 padding-top:100px;
-border-width:2px;
-border-style:ridge;
+//border-width:2px;
+//border-style:ridge;
 }
 #table_b td{
 border-width:2px;
@@ -113,15 +113,50 @@ background: #C0C0C0;
 #but{
 margin-left:30px;
 }
+#select_menu{
+position:absolute;
+top:197px;
+left:500px;
+visibility:visible;
+}
 #menu_1{
 position:absolute;
-top:248px;
-left:400px;
+top:16px;
+left:250px;
+width:200px;
+visibility:visible;
 }
 #menu_2{
 position:absolute;
-top:248px;
-left:400px;
+top:16px;
+left:250px;
+width:200px;
+visibility:hidden;
+}
+#menu_3{
+position:absolute;
+top:16px;
+left:250px;
+width:200px;
+visibility:hidden;
+}
+.hidd{
+	background-color:#CDC9C9;
+	border:0px;
+	color:black;
+}
+#butt{
+
+padding-left:500px;
+
+}
+#status_div {
+position:relative;
+top:-15px;
+left:180px;
+
+width:10px;
+height:10px;
 }
 
 

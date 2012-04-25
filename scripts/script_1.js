@@ -1,22 +1,32 @@
+﻿
+jQuery(document).ready(function(){
+var rest, id_rest;
 
-$(document).ready(function(){
-$("#table_b tr").click(function(){
- $("#table_b tr").removeClass("chosen");
- $(this).addClass("chosen");
+jQuery("#but").click(function(){
+
+if (rest==undefined){
+alert("Пожалуйста, выберите ресторан!")
+}
+else
+{jQuery("#content").load("sources/form.html");
+jQuery("#hidden").val(rest);
+jQuery("#id_hid").val(id_rest);
+
+}
+
+ 
 });
-$("#but").click(function(){
+jQuery("#table_b tr").click(function(){
 
-$("#content").load("sources/form.html");
+ jQuery("#table_b tr").removeClass("chosen");
+ 
+ jQuery(this).addClass("chosen");
+ rest = this.getElementsByTagName('td')[1].innerHTML;
+ id_rest = this.getElementsByTagName('td')[0].innerHTML;
+});
+
 });
  
 
-$(function(){
-  $.datepicker.setDefaults($.datepicker.regional['ru']);
-$('input[name=datepicker]').datepicker();
-$('input[name=datepicker]').datepicker('option', 'dateFormat', 'dd.mm.yy');
-
-});
-
-});
 
 
