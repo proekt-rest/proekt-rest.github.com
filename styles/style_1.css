@@ -29,9 +29,9 @@ background:#CDC9C9 center center repeat-x;
 cursor:pointer;
 background:#CDC9C9 center center repeat-x;
 }
-#all_menu{
+#all_menu, #news_all{
     width:900px;
-	height:510px;
+	height:600px;
 	background-color:#EEE9E9;
 	border-width:2px;
 	border-style:solid;
@@ -74,7 +74,7 @@ background:#CDC9C9 center center repeat-x;
 	background-color:#EEE9E9;
 	border-width:2px;
 	border-style:solid;
-}
+} 
 #rest,#y_bron, #bron, #zakaz{
 	width:400px;
 	height:510px;
