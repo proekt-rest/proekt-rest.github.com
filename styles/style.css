@@ -1,45 +1,56 @@
+/* шрифты: Ubuntu Mono */
+
+@font-face{
+font-family:"Ubuntu Mono";
+src: url('../fonts/ubuntu_mono.ttf');
+} 
+
 body, html{
 	margin:0px;
 	padding:0px;
 }
+
 #container{
-min-width:800px;
+	min-width:800px;
 	width:1000px;
 	margin:0 auto;
 	margin-top:20px;
-	}
+}
+
 #header
 {   
 	background-color:#ec984f;
-	height:140px;
+	height:130px;
     border-radius:10px 10px 0px 0px;
-	}
+}
 	
 #logo{
-	
 	width:400px;
 	height:115px;
 	border-radius:10px 0 0 0;
 	background-image:url('images/logo_main.png');
 }
+
 .menu{
-margin:0px;
-padding:0px;
-float: left;
-font: bold 18px Arial;
-width:100%;
-height:29px; /* дописал */
-border-width: 1px 0;
-background-color:#ec984f;
+	margin:0px;
+	padding:0px;
+	float: left;
+	font: bold 18px Arial;
+	width:100%;
+	height:28px; /* дописал */
+	border-width: 1px 0;
+	background-color:#ec984f;
 }
 
 .menu li{
-display: inline;
-vertical-align: middle;
-height:30px;
-padding:0 8px 9px 16px;
-margin: 0 8px 0 0;
-border-radius:8px 8px 0 0;
+	font-family:"Ubuntu Mono";
+	font-size:1.1em;
+	display: inline;
+	vertical-align: middle;
+	height:28px;
+	padding:0 8px 9px 16px;
+	margin: 0 8px 0 0;
+	border-radius:8px 8px 0 0;
 }
 
 li:first-child{
@@ -47,31 +58,23 @@ li:first-child{
 }
 
 .current{
-background:#ecf0f1 center center repeat-x;
-box-shadow: 5px -3px 2px #cc7f3f;
+	background:#ecf0f1 center center repeat-x;
+	box-shadow: 5px -3px 2px rgba(0, 0, 0, 0.3);
 }
+
 .menu li:hover{
-
-cursor:pointer;
-background:#ecf0f1 center center repeat-x;
-box-shadow: 3px -2px 2px #cc7f3f;
+	cursor:pointer;
+	background:#ecf0f1 center center repeat-x;
+	box-shadow: 3px -2px 2px rgba(0, 0, 0, 0.3);
 }
 
-	
-	
-	
 #content {
-
-	   
-      	background-color:#ecf0f1;
-	
-		height:810px;
-		width:1000px;
-		
-		}
+	background-color:#ecf0f1;
+	height:810px;
+	width:1000px;
+	}
 
 #foot{
-    
 	background-color:#8B8989;
 	padding-top:0;
 	}

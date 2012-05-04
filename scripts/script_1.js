@@ -23,6 +23,7 @@ jQuery("#table_b tr").click(function(){
  jQuery(this).addClass("chosen");
  rest = this.getElementsByTagName('td')[1].innerHTML;
  id_rest = this.getElementsByTagName('td')[0].innerHTML;
+ jQuery("#id_hid").val(id_rest);
 });
 
 });

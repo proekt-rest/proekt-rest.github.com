@@ -1,42 +1,15 @@
-.menu_navi{
-margin:0px;
-padding-bottom:0px;
-float: left;
-font: bold 18px Arial;
-width:400px;
-border-width: 1px 0;
-background-color:#8B8989;
+/* шрифты: Ubuntu, Bonzai */
 
+@font-face{
+font-family:"Ubuntu";
+src: url('../fonts/ubuntu.ttf');
+} 
 
-}
-.menu_navi li{
-display: inline;
-vertical-align: middle;
-height:25px;
-border-left:3px solid #8B8989;
-padding:0 8px 0 16px;
-border-radius:0 15px 0 0;
-}
-#navig {
-position:relative;
-top:75px;
-}
-.current_menu{
-background:#CDC9C9 center center repeat-x;
-}
-.menu_navi li:hover{
+@font-face{
+font-family:"Bonzai";
+src: url('../fonts/bonzai.ttf');
+} 
 
-cursor:pointer;
-background:#CDC9C9 center center repeat-x;
-}
-#all_menu, #news_all{
-    width:900px;
-	height:600px;
-	background-color:#EEE9E9;
-	border-width:2px;
-	border-style:solid;
-
-}
 #con, #con_g, #con_y, #con_b, #con_z, #con_m{
     padding-top:50px;
 	margin:0 auto;
@@ -44,17 +17,20 @@ background:#CDC9C9 center center repeat-x;
 	width:900px;
 	}
 
-
-
 #osnova, #osnova_g, #osnova_y, #osnova_m, #osnova_b,#osnova_z {
 	width:900px;
 	height:100px;
-	
-	background-color:#EEE9E9;
-	border-width:2px;
-	border-style:solid;
-	
+	margin:0 0 10px 0;
+	color:#222222;
+	text-align:center;
+	font:normal normal 1.05em Ubuntu;
+	text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+	background-color:rgba(255, 204, 0, 0.3);
+	border-width:5px;
+	border-radius:10px;
+	box-shadow: 1px -1px rgba(0, 0, 0, 0.5);
 }
+
 #news {
 	width:450px;
 	height:460px;
@@ -64,10 +40,9 @@ background:#CDC9C9 center center repeat-x;
 	background-color:#EEE9E9;
 	border-width:2px;
 	border-style:solid;
-	
 }
+
 #sale {
-	
 	width:450px;
 	height:460px;
 	margin-left:450px;
@@ -75,6 +50,7 @@ background:#CDC9C9 center center repeat-x;
 	border-width:2px;
 	border-style:solid;
 } 
+
 #rest,#y_bron, #bron, #zakaz{
 	width:400px;
 	height:510px;
@@ -84,7 +60,6 @@ background:#CDC9C9 center center repeat-x;
 	background-color:#EEE9E9;
 	border-width:2px;
 	border-style:solid;
-	
 }
 
 #galereya,#y_zakaz , #map, #action{
@@ -94,73 +69,168 @@ background:#CDC9C9 center center repeat-x;
 	background-color:#EEE9E9;
 	border-width:2px;
 	border-style:solid;
-	
 }
+
 #table_b{
 margin:0 auto;
 padding-top:100px;
 //border-width:2px;
 //border-style:ridge;
 }
+
 #table_b td{
 border-width:2px;
 border-style:ridge;
 border-color: #000000;
 }
+
 #table_b tr:hover{
 background:#D3D3D3;
 cursor:pointer;
 }
+
 .chosen {
 background: #C0C0C0;
 }
+
 #but{
 margin-left:30px;
 }
-#select_menu{
+
+/*#select_menu{
 position:absolute;
 top:197px;
 left:500px;
 visibility:visible;
-}
+}*/
+
 #menu_1{
 position:absolute;
-top:16px;
+top:0px;
 left:250px;
-width:200px;
+width:250px;
 visibility:visible;
 }
+
 #menu_2{
 position:absolute;
-top:16px;
+top:0px;
 left:250px;
 width:200px;
 visibility:hidden;
 }
+
 #menu_3{
 position:absolute;
-top:16px;
+top:0px;
 left:250px;
 width:200px;
 visibility:hidden;
 }
+
 .hidd{
-	background-color:#CDC9C9;
+	background-color:#ecf0f1;
 	border:0px;
 	color:black;
 }
+
 #butt{
-
 padding-left:500px;
-
 }
+
 #status_div {
 position:relative;
 top:-15px;
 left:180px;
-
 width:10px;
 height:10px;
 }
 
+/* стиль для Главной и Меню */
 
+#all_menu, #news_all{
+    width:900px;
+	height:600px;
+	background-color:rgba(252, 251, 181, 0.6); 
+	border-radius:10px;
+	box-shadow: 1px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* верстка Главной */
+
+#caption{
+	margin:0.2em 0 0 0;
+	text-align:center;
+	font-family:Bonzai;
+	font-size:1.6em;
+	text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.4);
+	height:1.7em;
+	}
+	
+#subhead
+{
+	font-weight:bold;
+	font-family:sans-serif;
+	font-size:0.9em;
+	background:rgba(236, 152, 79, 0.25);
+	box-shadow: 2px -2px rgba(118, 76, 40, 0.25);
+	margin: 0 0 1em 0;
+	}
+	
+/* верстка Меню */
+	
+#navig{
+	width:450px;
+	height:23px;
+	padding-left:20px;
+	padding-top:5px;
+	margin:0 0 2px 0;
+	color:#222222;
+	background-color:transparent;
+}
+
+.menu_navi{
+	margin:0px;
+	padding:0px;
+	font: bold 18px Arial;
+	width:100%;
+}
+
+.menu_navi li{
+	margin-right:10px;
+	display: inline;
+	padding:3px 15px 3px 15px;
+	border-radius:10px 10px 0px 0px;
+	box-shadow: 1px -1px rgba(0, 0, 0, 0.5), 0px -1px rgba(0, 0, 0, 0.5) inset;
+	background:#daddb3; /* #f5f7cd */
+}
+
+.cover{
+	background-image:url('../styles/images/bckgrnd.png');
+}
+#select_menu {
+position:relative;
+top:50px;
+left:400px;
+
+}
+
+#user_form span{
+font-size: 12px;
+
+}
+#status_div{
+border-radius:10px;
+background-color:red;
+}
+
+#table_div {
+position:relative;
+top:-30px;
+left:200px;
+}
+#user_form{
+padding-left:100px;
+padding-top:100px;
+
+}
