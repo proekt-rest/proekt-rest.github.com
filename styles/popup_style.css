@@ -1,0 +1,69 @@
+/* Стили CSS для класса .tooltip */
+.tooltip img,.tooltip_1 a{
+  cursor: pointer; 
+}
+img
+  {
+  height:125;
+  width:125;
+  }
+
+/*.tooltip span, .tooltip_1 span {
+  margin-left: -999em;
+  position: absolute;
+}
+*/
+/* CSS для отображения всплывающей подсказки */
+
+.tooltip:hover span{
+  font-family: Calibri, Tahoma, Geneva, sans-serif;
+  position: absolute;
+  left: -60px;
+  top: -1em;
+  right:auto;
+  z-index: 99;
+  margin-left: 0;
+  width: 250px;
+  /* (!) только для новых браузеров (!) */
+  border-radius: 5px 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+.tooltip_1:hover span{
+  font-family: Calibri, Tahoma, Geneva, sans-serif;
+  position: absolute;
+  left: -60px;
+  top: -10em;
+  right:auto;
+  z-index: 99;
+  margin-left: 0;
+  width: 250px;
+  /* (!) только для новых браузеров (!) */
+  border-radius: 5px 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.tooltip:hover em , .tooltip_1:hover em {
+  font-family: Candara, Tahoma, Geneva, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 0.2em 0 0.6em 0;
+}
+.classic , .classic_1{ padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+
+/* Код CSS для цветовой схемы */
+.classic, .classic_1 { background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334; }
+.help { background: #9FDAEE; border: 1px solid #2BB0D7; }
+.info { background: #AAFFAA; border: 1px solid #33BB33; }
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }

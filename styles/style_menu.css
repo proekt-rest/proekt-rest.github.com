@@ -1,0 +1,16 @@
+﻿@font-face{
+	font-family:"Bonzai";
+	src: url('../fonts/bonzai.ttf');
+} 
+
+.decor{
+	font-family:Bonzai;
+	font-size:1.6em;
+	text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+img{
+	height:125;
+	width:125;
+	box-shadow: 2px -2px rgba(0, 0, 0, 0.1);
+}
