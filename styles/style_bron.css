@@ -1,0 +1,25 @@
+#table_b{
+margin:0 auto;
+padding-top:100px;
+//border-width:2px;
+//border-style:ridge;
+}
+
+#table_b td{
+border-width:2px;
+border-style:ridge;
+border-color: #000000;
+}
+
+#table_b tr:hover{
+background:#D3D3D3;
+cursor:pointer;
+}
+
+.chosen {
+background: #C0C0C0;
+}
+
+#but{
+margin-left:30px;
+}

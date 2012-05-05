@@ -1,25 +1,24 @@
 ﻿<html>
 <head>
-<link rel="stylesheet" type="text/css" href="styles/style_1.css">
-<script src="scripts/jquery-1.7.2.min.js"  type="text/javascript"></script>
-<link rel="Stylesheet" href="styles/popup_style.css" />
-<link type="text/css" href="styles/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
-<script type="text/javascript" src="scripts/script_1.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/style_form.css">
+
+<link type="text/css" href="styles/jquery-ui-1.8.18.custom.css" rel="stylesheet" /> 
+
 
 <script type="text/javascript" src="scripts/form.js "></script>
 <script type="text/javascript" src="scripts/jquery.ui.datepicker-ru.js"></script>
-<script src="scripts/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+<script src="scripts/jquery-ui-1.8.20.custom.min.js" type="text/javascript"></script>
 <script src="scripts/jquery-ui-i18n.js" type="text/javascript"></script>
-<script type="text/javascript" src="scripts/status_tab.js"></script>
-<!-- /*<script type="text/javascript" src="http://www.google.com/jsapi"></script> -->
+ <script type="text/javascript" src="scripts/status_tab.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 
 </head>
 
 <body>
 
-<div id ="user_form"">
-<form name="user_form" action="sources/user.php" method=post accept-charset="utf-8">
-<center>Форма для бронирования столика по адресу: <input class="hidd" type=text size="50" name="rest_n" disabled></center>
+
+<form id="user_form_id" name="user_form" action="sources/user.php" method=post accept-charset="utf-8">
+Форма для бронирования столика по адресу: <input class="hidd" type=text size="50" name="rest_n" disabled>
 <input type=hidden name="id_rest"><input type=hidden  name="address_rest"> <br>
 <div id="select_menu">
    Доступное меню: <br>
@@ -29,27 +28,14 @@
       <option value="nap">Напитки</option>
     </select>
 <div id="load">
-<div  id="menu_1"> 
-<h4>Салаты</h4><input  type="checkbox"  id="checkbox" name="checkbox[]" value="Салат_с_м/п" /><a class="tooltip_1">Салат с море продуктами<span class="classic_1">
-<em>Салат с морепродуктами</em><b>Состав:</b> креветки, гребешок, кальмар, микс салатов, помидоры Черри, перец болгарский, чеснок, кунжутный соус<br><b>Вес:</b> 200гр<br><b>Цена:</b> 260руб</span></a><br>
- <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Маринованные_овощи" /><a class="tooltip_1">Маринованные овощи<span class="classic_1">
-<em>Маринованные овощи</em><b>Состав:</b> маринованные китайская капуста, огурцы и морковь<br><b>Вес:</b> 150гр<br><b>Цена:</b> 113руб</span></a><br>
- <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Копченый_лосось" /><a class="tooltip_1">Копчёный лосось с авокадо под майонезным соусом<span class="classic_1">
-<em>Копчёный лосось с авокадо под майонезным соусом</em><b>Состав:</b> подкопченный лосось, авокадо, острый соус "Табаско", легкий майонез<br><b>Вес:</b> 180гр<br><b>Цена:</b> 353руб</span></a><br>
- <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Салат_из_авокадо" /><a class="tooltip_1">Салат из авокадо с креветками<span class="classic_1">
-<em>Салат из авокадо с креветками</em><b>Состав:</b> тигровые креветки, авокадо, майонез, яйцо.<br><b>Вес:</b> 180гр<br><b>Цена:</b> 258руб</span></a><br>
- <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Салат_из_соевой_спаржи" /><a class="tooltip_1">Салат из соевой спаржи<span class="classic_1">
-<em>Салат из соевой спаржи</em><b>Состав:</b> соевая спаржа, болгарский перец, чеснок, кунжутное масло<br><b>Вес:</b> 150гр<br><b>Цена:</b> 163руб</span></a><br>
- <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Салат_из_креветок" /><a class="tooltip_1">Салат из креветок, кальмаров, гребешков<span class="classic_1">
-<em>Салат из креветок, кальмаров, гребешков</em><b>Состав:</b> креветки, кальмары, морские гребешки, соус "Табаско"<br><b>Вес:</b> 210гр<br><b>Цена:</b> 486руб</span></a><br> 
- <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Пюре" />Пюре 
+<div  id="menu_1"> <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Цезарь" />Цезарь<br>
  <input  type="checkbox"  id="checkbox" name="checkbox[]" value="Пюре" />Пюре </div>
 <div  id="menu_2"> <input  type="checkbox"  id="checkbox_1" name="checkbox_1[]" value="Суши" />Суши </div>
 <div  id="menu_3"> <input  type="checkbox"  id="checkbox_2" name="checkbox_2[]" value="Сок" /> Сок </div>
 </div>
 
 </div>
-Ваше имя *: <input type=text name="first_name"><span id="first_div"></span><br>
+Ваши имя *: <input type=text name="first_name"><span id="first_div"></span><br>
 Ваша фамилия *: <input type=text name="last_name"><span id="last_div"></span><br>
 Ваше отчество: <input type=text name="middle_name"><br>
 <i>Выберите, пожалуйста, дату и время,<br> на которые хотите забронировать столик,<br>и выберите столик для проверки его статуса!</i><br>
@@ -62,8 +48,8 @@
       <option value="t2">2</option>
       <option value="t3">3</option>
 	  <option value="t4">4</option>
-	  <option value="t5">5</option>
-	  <option value="t6">6</option>
+	  <option value="t5">3</option>
+	  <option value="t6">4</option>
     </select> <br> <div id="status_div"></div><span id="table_div"></span><br>
 Количество персон *: <input type=text size="3" name="number_pers"><span id="number_div"></span><br>
 Тип зала:    <input type="radio" name="zal" value="yes"> Курящий
@@ -71,7 +57,7 @@
 Ваш телефон *:<input type=text name="phone"><span id="phone_div"></span><br>
 Ваш e-mail адрес *:<input type=text name="email"><span id="email_div"></span><br>
 
-  </div> 
+   
 <br>
 <div id="butt">
 <input type="button" onclick="submit_but()" value="Оформить">

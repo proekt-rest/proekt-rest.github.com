@@ -1,37 +1,33 @@
     
- $(document).ready(function(){
-$("#content").load("./sources/main-site.html");
- $("#main-site").addClass("current") ;
-	  $("#main-site").click(function(){
-	   $('li').removeClass("current");
-	   $("#content").load("./sources/main-site.html");
-	   $("#main-site").addClass("current") ;  
+ jQuery(document).ready(function(){
+jQuery("#content").load("sources/main-site.html");
+ jQuery("#main-site_li").addClass("current") ;
+	  jQuery("#main-site_li").click(function(){
+	   jQuery('li').removeClass("current");
+	   jQuery("#content").load("sources/main-site.html");
+	   jQuery("#main-site_li").addClass("current") ;  
 	   });
 	   
-	  $("#bron_id").click(function(){
-	   $('li').removeClass("current");
-	 $("#content").load("./sources/bron.html") ; 
- $("#bron_id").addClass("current") ;  	 
+	  jQuery("#bron_li").click(function(){
+	   jQuery('li').removeClass("current");
+	 jQuery("#content").load("sources/bron.html") ; 
+ jQuery("#bron_li").addClass("current") ;  	 
 	   });
 	   
-	    $("#zakaz_id").click(function(){
-		 $('li').removeClass("current");
-	   $("#content").load("./sources/zakaz.html");  
- $("#zakaz_id").addClass("current") ;	   
+	   jQuery("#zakaz_li").click(function(){
+		 jQuery('li').removeClass("current");
+	   jQuery("#content").load("sources/zakaz.html");  
+ jQuery("#zakaz_li").addClass("current") ;	   
 	   });
-	    $("#your_id").click(function(){
-		 $('li').removeClass("current");
-	   $("#content").load("./sources/your.html"); 
-	    $("#your_id").addClass("current") ;
+	    
+	    jQuery("#menu_li").click(function(){
+		 jQuery('li').removeClass("current");
+	   jQuery("#content").load("sources/menu.html");  
+	    jQuery("#menu_li").addClass("current") ;
 	   });
-	    $("#menu_id").click(function(){
-		 $('li').removeClass("current");
-	   $("#content").load("./sources/menu.html");  
-	    $("#menu_id").addClass("current") ;
-	   });
-	    $("#galer_id").click(function(){
-		 $('li').removeClass("current");
-	   $("#content").load("./sources/galer.html");  
-	    $("#galer_id").addClass("current") ;
+	    jQuery("#galer_li").click(function(){
+		 jQuery('li').removeClass("current");
+	   jQuery("#content").load("sources/galer.html");  
+	    jQuery("#galer_li").addClass("current") ;
 	   });
 	});

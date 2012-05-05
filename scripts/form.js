@@ -40,18 +40,18 @@ jQuery("#load #menu_3").css("visibility","visible");
 function getHexRGBColor(color)
 {
   color = color.replace(/\s/g,"");
-  var aRGB = color.match(/^rgb\((\d{1,3}[%]?),(\d{1,3}[%]?),(\d{1,3}[%]?)\)$/i);
+  var aRGB = color.match(/^rgb\((\d{1,3}[%]?),(\d{1,3}[%]?),(\d{1,3}[%]?)\)jQuery/i);
   if(aRGB)
   {
     color = '';
-    for (var i=1;  i<=3; i++) color += Math.round((aRGB[i][aRGB[i].length-1]=="%"?2.55:1)*parseInt(aRGB[i])).toString(16).replace(/^(.)$/,'0$1');
+    for (var i=1;  i<=3; i++) color += Math.round((aRGB[i][aRGB[i].length-1]=="%"?2.55:1)*parseInt(aRGB[i])).toString(16).replace(/^(.)jQuery/,'0jQuery1');
   }
-  else color = color.replace(/^#?([\da-f])([\da-f])([\da-f])$/i, '$1$1$2$2$3$3');
+  else color = color.replace(/^#?([\da-f])([\da-f])([\da-f])jQuery/i, 'jQuery1jQuery1jQuery2jQuery2jQuery3jQuery3');
   return color;
 }
 
 function submit_but(){
-mail = $.trim($('input[name=email]').val());
+
 
 var adr=user_form.email.value;
 var f_n=user_form.first_name.value;
@@ -68,7 +68,7 @@ var ph= user_form.phone.value;
  var ph_pattern = /[0-9]{1,10}/;
  var prov = true;
  var prov5 = true;
-  if(mail){prov=adr_pattern.test(adr);}
+ prov=adr_pattern.test(adr);
   var prov1=f_pattern.test(f_n);
   var prov2=l_pattern.test(l_n);
   var prov3=t_pattern.test(time_f);
@@ -77,80 +77,77 @@ var ph= user_form.phone.value;
     var prov7=ph_pattern.test(ph);
  if(prov==true)
  {
- if(!mail){
- email_div.innerHTML = "";
- }
- else{
- $("#email_div").css('color','green');
- email_div.innerHTML = "Верно!";}
+ 
+ jQuery("#email_div").css('color','green');
+ email_div.innerHTML = "Верно!";
  }
       else {	
-	   $("#email_div").css('color','red');
+	   jQuery("#email_div").css('color','red');
 	  email_div.innerHTML = "Некорректный e-mail адрес (Пример адреса: user@gmail.com)";}
   
   if (prov1==true){
   
-  $("#first_div").css('color','green');
+  jQuery("#first_div").css('color','green');
  first_div.innerHTML = "Верно!";
   }
-  else{    $("#first_div").css('color','red');
+  else{    jQuery("#first_div").css('color','red');
        first_div.innerHTML = "Некорректное имя или поле пустое";
   }
   
   if (prov2==true){
   
-  $("#last_div").css('color','green');
+  jQuery("#last_div").css('color','green');
  last_div.innerHTML = "Верно!";
   
   } 
-  else{ $("#last_div").css('color','red');
+  else{ jQuery("#last_div").css('color','red');
         last_div.innerHTML = "Некорректная фамилия или поле пустое";
   }
   if (prov6==true){
   
-  $("#number_div").css('color','green');
+  jQuery("#number_div").css('color','green');
  number_div.innerHTML = "Верно!";
   
   } 
-  else{ $("#number_div").css('color','red');
+  else{ jQuery("#number_div").css('color','red');
         number_div.innerHTML = "Некорректная информация";
   }
   if (prov7==true){
   
-  $("#phone_div").css('color','green');
+  jQuery("#phone_div").css('color','green');
  phone_div.innerHTML = "Верно!";
   
   } 
-  else{ $("#phone_div").css('color','red');
+  else{ jQuery("#phone_div").css('color','red');
         phone_div.innerHTML = "Некорректная информация, введите номер мобильного без 8 (пример: 9811234567)";
   }
   if (prov3==true&&prov4==true) {
   
-  $("#time_div").css('color','green');
+  jQuery("#time_div").css('color','green');
  time_div.innerHTML = "Верно!";
   
   
   }
-  else{ $("#time_div").css('color','red');
+  else{ jQuery("#time_div").css('color','red');
         time_div.innerHTML = "Время введено неверно или поле пустое (используйте знак разделения \":\")";
   }
-  var RBG = $("#status_div").css('background-color');
+  var RBG = jQuery("#status_div").css('background-color');
   var tmp = getHexRGBColor(RBG);
  if (tmp=='ff0000')
  {
  prov5 = false;
- $("#table_div").css('color','red');
+ jQuery("#table_div").css('color','red');
   table_div.innerHTML = "Столик занят, либо не выбран!";
  }
  else
  {
- $("#table_div").css('color','green');
+ jQuery("#table_div").css('color','green');
  table_div.innerHTML = "Выбранный столик свободен!";
  }
  if(prov&&prov1&&prov2&&prov3&&prov4&&prov5&&prov6&&prov7)
  {
-  $("#content").load("sources/wait.html");
- $("#content").load("sources/user.php",$("#user_form").serialize());
+  jQuery("#content").load("sources/wait.html");
+ jQuery("#content").load("sources/user.php",jQuery("#user_form_id").serialize());
      
  }
 }

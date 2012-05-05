@@ -4,7 +4,112 @@
 font-family:"Ubuntu Mono";
 src: url('../fonts/ubuntu_mono.ttf');
 } 
+@font-face{
+font-family:"Bonzai";
+src: url('../fonts/bonzai.ttf');
+} 
 
+#con, #con_g, #con_y, #con_b, #con_z, #con_m{
+    padding-top:50px;
+	margin:0 auto;
+	height:650px;
+	width:900px;
+	}
+
+#osnova, #osnova_g, #osnova_y, #osnova_m, #osnova_b,#osnova_z {
+	width:900px;
+	height:100px;
+	margin:0 0 10px 0;
+	color:#222222;
+	text-align:center;
+	font:normal normal 1.05em Ubuntu;
+	text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+	background-color:rgba(255, 204, 0, 0.3);
+	border-width:5px;
+	border-radius:10px;
+	box-shadow: 1px -1px rgba(0, 0, 0, 0.5);
+}
+
+#news {
+	width:450px;
+	height:460px;
+	//padding-right: 1px;
+    //overflow-x: hidden;
+	float:left;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+}
+
+#sale {
+	width:450px;
+	height:460px;
+	margin-left:450px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+} 
+
+#rest,#y_bron, #bron, #zakaz{
+	width:400px;
+	height:510px;
+	//padding-right: 1px;
+    //overflow-x: hidden;
+	float:left;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+}
+
+#galereya,#y_zakaz , #map, #action{
+	width:500px;
+	height:510px;
+	margin-left:400px;
+	background-color:#EEE9E9;
+	border-width:2px;
+	border-style:solid;
+}
+
+
+
+/*#select_menu{
+position:absolute;
+top:197px;
+left:500px;
+visibility:visible;
+}*/
+
+
+/* стиль для Главной и Меню */
+
+#all_menu{
+    width:900px;
+	height:600px;
+	background-color:rgba(252, 251, 181, 0.6); 
+	border-radius:10px;
+	box-shadow: 1px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* верстка Главной */
+
+#caption{
+	margin:0.2em 0 0 0;
+	text-align:center;
+	font-family:Bonzai;
+	font-size:1.6em;
+	text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.4);
+	height:1.7em;
+	}
+	
+#subhead
+{
+	font-weight:bold;
+	font-family:sans-serif;
+	font-size:0.9em;
+	background:rgba(236, 152, 79, 0.25);
+	box-shadow: 2px -2px rgba(118, 76, 40, 0.25);
+	margin: 0 0 1em 0;
+	}
 body, html{
 	margin:0px;
 	padding:0px;
@@ -53,7 +158,7 @@ body, html{
 	border-radius:8px 8px 0 0;
 }
 
-li:first-child{
+.menu li:first-child{
 	margin-left:5px;
 }
 

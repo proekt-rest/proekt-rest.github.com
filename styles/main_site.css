@@ -1,0 +1,11 @@
+table th
+  {
+  border:0px;
+  }
+  #news_all{
+    width:900px;
+	height:600px;
+	background-color:rgba(252, 251, 181, 0.6); 
+	border-radius:10px;
+	box-shadow: 1px -1px rgba(0, 0, 0, 0.5);
+}
